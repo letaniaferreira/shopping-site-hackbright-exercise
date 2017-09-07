@@ -16,9 +16,12 @@ melon_types[melon_id] = melon info -->
             <th>Total</th>
         </tr>
         </thead>
+        {% for melon in melon_list %}
+
+        {% endfor %}
         <tbody>
         <tr>
-            <td>melon.common_name</td>
+            <td>{{ melon.common_name }}</td>
             <td>session[melon_id]</td>
             <td>melon.price</td>
             <td>melon.price * session[melon_id]</td>
